@@ -49,3 +49,63 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// 🎮 彩蛋入口 1：按键序列 "wxyz"
+(function() {
+    let keySequence = [];
+    const secretCode = ['w', 'x', 'y', 'z'];
+
+    document.addEventListener('keydown', function(e) {
+        // 忽略在输入框中的按键
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+            return;
+        }
+
+        keySequence.push(e.key.toLowerCase());
+
+        // 只保留最近的4个按键
+        if (keySequence.length > 4) {
+            keySequence.shift();
+        }
+
+        // 检查是否匹配密码
+        if (keySequence.join('') === secretCode.join('')) {
+            // 触发彩蛋！
+            window.location.href = 'stats.html';
+        }
+    });
+})();
+
+// 🎮 彩蛋入口 2：快速点击 LOGO 5 次
+(function() {
+    const logo = document.querySelector('nav h1');
+    if (!logo) return;
+
+    let clickCount = 0;
+    let clickTimer = null;
+
+    logo.style.cursor = 'pointer';
+    logo.style.userSelect = 'none';
+
+    logo.addEventListener('click', function(e) {
+        e.preventDefault();
+        clickCount++;
+
+        // 清除之前的计时器
+        if (clickTimer) {
+            clearTimeout(clickTimer);
+        }
+
+        // 如果在1秒内点击5次，触发彩蛋
+        if (clickCount >= 5) {
+            // 触发彩蛋！
+            window.location.href = 'stats.html';
+            clickCount = 0;
+        } else {
+            // 1秒后重置计数
+            clickTimer = setTimeout(function() {
+                clickCount = 0;
+            }, 1000);
+        }
+    });
+})();
