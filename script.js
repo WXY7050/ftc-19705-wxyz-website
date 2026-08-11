@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // 检查是否匹配密码
         if (keySequence.join('') === secretCode.join('')) {
             // 触发彩蛋！
-            window.location.href = 'stats.html';
+            window.location.href = '/stats.html';
         }
     });
 })();
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // 如果在1秒内点击5次，触发彩蛋
         if (clickCount >= 5) {
             // 触发彩蛋！
-            window.location.href = 'stats.html';
+            window.location.href = '/stats.html';
             clickCount = 0;
         } else {
             // 1秒后重置计数
