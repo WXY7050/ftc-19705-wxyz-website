@@ -88,6 +88,11 @@ nav h1 {
     background-clip: text;
     text-transform: uppercase;
     letter-spacing: 3px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 nav ul {
