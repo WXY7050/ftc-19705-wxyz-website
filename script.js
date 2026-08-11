@@ -84,9 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let clickCount = 0;
     let clickTimer = null;
 
-    logo.style.cursor = 'pointer';
-    logo.style.userSelect = 'none';
-
     logo.addEventListener('click', function(e) {
         e.preventDefault();
         clickCount++;
