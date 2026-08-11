@@ -549,19 +549,19 @@ nav a:hover {
 
 /* 2026赛季特殊调整 */
 body:has([src*="2026-robot-main.png"]) .robot-hero-multi img:nth-child(1) {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 body:has([src*="2026-robot-main.png"]) .robot-hero-multi img:nth-child(1):hover {
-    transform: scale(1.2) translateY(-10px);
+    transform: scale(1.1) translateY(-10px);
 }
 
 body:has([src*="2026-robot-main.png"]) .robot-hero-multi img:nth-child(3) {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 body:has([src*="2026-robot-main.png"]) .robot-hero-multi img:nth-child(3):hover {
-    transform: scale(1.2) translateY(-10px);
+    transform: scale(1.1) translateY(-10px);
 }
 
 .robot-hero-caption {
