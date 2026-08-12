@@ -103,15 +103,124 @@
                 </iframe>
                 <p>中国总决赛机器人展示</p>
             </div>
-            <div class="media-item">
-                <img src="../images/2026-robot.jpg" alt="2026机器人">
-                <p>机器人全貌</p>
-            </div>
-            <div class="media-item">
-                <img src="../images/2026-team.jpg" alt="2026团队">
-                <p>团队合影</p>
+            <div class="media-item photo-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                    <div class="carousel-images">
+                        <img src="../images/team/2026-team-1.jpg" alt="团队照片1" class="carousel-slide active">
+                        <img src="../images/team/2026-team-2.jpg" alt="团队照片2" class="carousel-slide">
+                        <img src="../images/team/2026-team-3.jpg" alt="团队照片3" class="carousel-slide">
+                        <img src="../images/team/2026-team-4.jpg" alt="团队照片4" class="carousel-slide">
+                        <img src="../images/team/2026-team-5.JPG" alt="团队照片5" class="carousel-slide">
+                        <img src="../images/team/2026-team-6.JPG" alt="团队照片6" class="carousel-slide">
+                    </div>
+                    <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+                <p>赛季团队照片</p>
             </div>
         </div>
+
+        <style>
+            .photo-carousel {
+                position: relative;
+            }
+            .carousel-container {
+                position: relative;
+                width: 100%;
+                height: 315px;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            .carousel-images {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            .carousel-slide {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .carousel-slide.active {
+                opacity: 1;
+            }
+            .carousel-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-size: 24px;
+                z-index: 10;
+                transition: background 0.3s;
+            }
+            .carousel-btn:hover {
+                background: rgba(230, 57, 70, 0.8);
+            }
+            .carousel-btn.prev {
+                left: 10px;
+            }
+            .carousel-btn.next {
+                right: 10px;
+            }
+            .carousel-dots {
+                text-align: center;
+                padding: 10px 0;
+            }
+            .dot {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                margin: 0 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+            .dot.active {
+                background: var(--primary);
+            }
+        </style>
+
+        <script>
+            let currentSlideIndex = 1;
+
+            function changeSlide(n) {
+                showSlide(currentSlideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlide(currentSlideIndex = n);
+            }
+
+            function showSlide(n) {
+                const slides = document.querySelectorAll('.carousel-slide');
+                const dots = document.querySelectorAll('.dot');
+
+                if (n > slides.length) currentSlideIndex = 1;
+                if (n < 1) currentSlideIndex = slides.length;
+
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+
+                slides[currentSlideIndex - 1].classList.add('active');
+                dots[currentSlideIndex - 1].classList.add('active');
+            }
+        </script>
     </section>
 
     <footer>
