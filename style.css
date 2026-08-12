@@ -17,6 +17,40 @@
     --light: #ffffff;        /* 白色 */
 }
 
+/* === Scroll Animation === */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animate-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate-left.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate-right.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 body {
     font-family: 'Rajdhani', sans-serif;
     line-height: 1.6;
@@ -59,14 +93,22 @@ body::before {
 
 /* Navigation */
 nav {
-    background: rgba(26, 26, 26, 0.95);
+    background: rgba(26, 26, 26, 0.6);
     backdrop-filter: blur(10px);
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid transparent;
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 5px 20px rgba(230, 57, 70, 0.2);
+    box-shadow: 0 2px 10px rgba(230, 57, 70, 0);
+    transition: all 0.3s ease;
+}
+
+nav.scrolled {
+    background: rgba(26, 26, 26, 0.98);
+    border-bottom-color: var(--primary);
+    box-shadow: 0 5px 25px rgba(230, 57, 70, 0.3);
+    padding: 0.7rem 0;
 }
 
 .nav-container {
@@ -222,12 +264,13 @@ nav a:hover {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.2);
 }
 
 .season-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(230, 57, 70, 0.5);
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(230, 57, 70, 0.6);
     border-color: var(--secondary);
 }
 
@@ -434,9 +477,10 @@ nav a:hover {
     border: 2px solid var(--primary);
     border-radius: 15px;
     padding: 30px;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.15);
 }
 
 .card::before {
@@ -462,8 +506,8 @@ nav a:hover {
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(230, 57, 70, 0.4);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(230, 57, 70, 0.5);
 }
 
 .card h4 {

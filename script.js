@@ -106,3 +106,43 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 })();
+
+// 🎨 滚动动画
+(function() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+            }
+        });
+    }, observerOptions);
+
+    // 监听所有需要动画的元素
+    document.addEventListener('DOMContentLoaded', function() {
+        const animateElements = document.querySelectorAll('.scroll-animate, .scroll-animate-left, .scroll-animate-right');
+        animateElements.forEach(el => observer.observe(el));
+    });
+})();
+
+// 🎨 导航栏滚动效果
+(function() {
+    const nav = document.querySelector('nav');
+    let scrolled = false;
+
+    window.addEventListener('scroll', function() {
+        const shouldBeScrolled = window.scrollY > 50;
+
+        if (shouldBeScrolled && !scrolled) {
+            nav.classList.add('scrolled');
+            scrolled = true;
+        } else if (!shouldBeScrolled && scrolled) {
+            nav.classList.remove('scrolled');
+            scrolled = false;
+        }
+    });
+})();
