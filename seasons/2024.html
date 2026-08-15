@@ -38,7 +38,7 @@
         <div class="robot-hero-multi">
             <img src="../images/robots/2024-robot-main.png" alt="2024赛季机器人正面">
             <img src="../images/robots/2024-robot-back.png" alt="2024赛季机器人后面">
-            <img src="../images/robots/2024-robot-detail.png" alt="2024赛季机器人细节">
+            <img src="../images/robots/2024-robot-up.png" alt="2024赛季机器人展开">
         </div>
         <p class="robot-hero-caption">2023-2024赛季机器人</p>
         <p class="robot-hero-name">BEYOND</p>
@@ -47,7 +47,12 @@
         <div class="card-grid">
             <div class="card">
                 <h4>机器人概述</h4>
-                <p>本赛季机器人采用滑轨折臂，配合夹子实现精确抓取和放置像素，同时包含纸飞机和高挂机构。</p>
+                <ul style="list-style: none; padding-left: 0; margin: 0;">
+                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>采用折臂滑轨结构，使用电位器准确控制位置</li>
+                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>配合夹子精确抓取和放置像素</li>
+                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>包含纸飞机机构</li>
+                    <li style="margin-bottom: 0;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>包含高挂机构</li>
+                </ul>
             </div>
             <div class="card">
                 <h4>技术规格</h4>
@@ -225,6 +230,29 @@
             }
         </script>
     </section>
+
+    <style>
+        /* 机器人名字和标题居中 */
+        .robot-hero-caption,
+        .robot-hero-name {
+            text-align: center;
+        }
+
+        /* 放大标题字号 */
+        .robot-hero-caption {
+            font-size: 2em;
+        }
+
+        /* 缩小后面图片 6% */
+        .robot-hero-multi img[src*="2024-robot-back.png"] {
+            transform: scale(0.88) translateY(-1    0px);
+        }
+
+        /* 缩小抬升图片 6% */
+        .robot-hero-multi img[src*="2024-robot-up.png"] {
+            transform: scale(1.10) translateY(-40px);
+        }
+    </style>
 
     <footer>
         <p>&copy; 2024 FTC队伍. 联系方式: wxyz19705@gmail.com</p>
