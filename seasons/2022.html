@@ -34,24 +34,28 @@
         <!-- 返回按钮 -->
         <a href="../seasons.html" class="back-btn">← 返回赛季档案</a>
 
-        <!-- 机器人照片展示 -->
-        <div class="robot-hero">
-            <img src="../images/2022-robot-main.jpg" alt="2022赛季机器人">
-            <p class="robot-hero-caption">2021-2022赛季机器人</p>
-            <p class="robot-hero-name">HAULER</p>
+        <!-- 机器人照片和概述 -->
+        <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 40px; max-width: 100%;">
+            <div class="robot-hero" style="flex: 1; max-width: 50%; display: flex; flex-direction: column; align-items: center;">
+                <img src="../images/robots/2022-robot-main.png" alt="2022赛季机器人" style="transform: scale(1.2);">
+                <p class="robot-hero-caption">2021-2022赛季机器人</p>
+                <p class="robot-hero-name">HAULER</p>
+            </div>
+            <div style="flex: 1; max-width: 50%; padding-top: 20px; display: flex; justify-content: center;">
+                <div>
+                    <h4 style="margin-bottom: 15px; font-size: 1.5em;">机器人概述</h4>
+                    <ul style="list-style: none; padding-left: 0; margin: 0; font-size: 1.2em; line-height: 1.8;">
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>采用四轮麦克纳姆轮设计</li>
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>实现全向移动能力</li>
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>配备先进视觉识别系统</li>
+                        <li style="margin-bottom: 0;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>精确的机械臂控制</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <h3>🤖 机器人设计</h3>
-        <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
-            <div class="card">
-                <h4>机器人概述</h4>
-                <ul style="list-style: none; padding-left: 0; margin: 0;">
-                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>采用四轮麦克纳姆轮设计</li>
-                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>实现全向移动能力</li>
-                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>配备先进视觉识别系统</li>
-                    <li style="margin-bottom: 0;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>精确的机械臂控制</li>
-                </ul>
-            </div>
+        <div class="card-grid" style="grid-template-columns: 1fr;">
             <div class="card">
                 <h4>技术规格</h4>
                 <p><strong>驱动系统：</strong> 四轮麦克纳姆轮<br>
