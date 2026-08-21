@@ -13,7 +13,7 @@
 
     const ctx = canvas.getContext('2d');
     let particles = [];
-    let particleCount = 100;
+    let particleCount = 150; // 增加粒子数量从 100 到 150
     let mouse = { x: null, y: null, radius: 150 };
 
     // 设置 canvas 尺寸
@@ -35,10 +35,10 @@
         constructor() {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 2 + 0.5;
+            this.size = Math.random() * 3 + 1.5; // 增加粒子大小
             this.speedX = Math.random() * 1 - 0.5;
             this.speedY = Math.random() * 1 - 0.5;
-            this.color = `rgba(230, 57, 70, ${Math.random() * 0.5 + 0.3})`;
+            this.color = `rgba(230, 57, 70, ${Math.random() * 0.6 + 0.5})`; // 增加不透明度
         }
 
         update() {
@@ -70,10 +70,17 @@
         }
 
         draw() {
+            // 添加发光效果
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = 'rgba(230, 57, 70, 0.8)';
+
             ctx.fillStyle = this.color;
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.fill();
+
+            // 重置阴影，避免影响连线
+            ctx.shadowBlur = 0;
         }
     }
 
@@ -94,9 +101,9 @@
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (distance < 120) {
-                    const opacity = (1 - distance / 120) * 0.3;
+                    const opacity = (1 - distance / 120) * 0.5; // 增加连线不透明度
                     ctx.strokeStyle = `rgba(230, 57, 70, ${opacity})`;
-                    ctx.lineWidth = 1;
+                    ctx.lineWidth = 1.5; // 增加线宽
                     ctx.beginPath();
                     ctx.moveTo(particles[i].x, particles[i].y);
                     ctx.lineTo(particles[j].x, particles[j].y);
