@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2018-2019 Season - 19705 WXYZ</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" href="../style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMJB08YKV4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HMJB08YKV4');
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>19705 WXYZ</h1>
+            <ul>
+                <li><a href="../index-en.html">Home</a></li>
+                <li><a href="../about-en.html">About</a></li>
+                <li><a href="../seasons-en.html">Seasons</a></li>
+                <li><a href="../resources-en.html">Resources</a></li>
+                <li><a href="../sponsors-en.html">Support</a></li>
+                <li><a href="2019.html" class="lang-switch">🌐 中文</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content">
+        <a href="../seasons-en.html" class="back-btn">← Back to Seasons</a>
+
+        <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 40px; max-width: 100%;">
+            <div class="robot-hero" style="flex: 1; max-width: 50%; display: flex; flex-direction: column; align-items: center;">
+                <img src="../images/robots/2019-robot-main.png" alt="2019 Robot" style="transform: scale(1.2);">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+                    <p class="robot-hero-caption" style="font-size: 2.2em; margin: 0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018-2019 Season Robot</p>
+                    <img src="../images/logos/2019-logo.png" alt="2019 Logo" style="height: 120px; width: auto;">
+                </div>
+                <p class="robot-hero-name">CUBE</p>
+            </div>
+            <div style="flex: 1; max-width: 50%; padding-top: 20px; display: flex; justify-content: center;">
+                <div>
+                    <h4 style="margin-bottom: 15px; font-size: 1.5em;">Robot Overview</h4>
+                    <ul style="list-style: none; padding-left: 0; margin: 0; font-size: 1.2em; line-height: 1.8;">
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>Multi-DOF gripper capable of free rotation and adaptive gripping</li>
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>Hanging mechanism combining slanted rope contact and hook design</li>
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>High-precision multi-stage vertical lift with low-backlash design</li>
+                        <li style="margin-bottom: 0;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>OpenCV vision recognition + IMU attitude correction</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h3>🏅 Season Achievements</h3>
+        <ul class="achievement-list">
+            <li>🥇 Hong Kong Invitational - Winning Alliance - May 2019</li>
+            <li>💡 Shanghai Invitational - Rockwell Innovation Award - June 2019</li>
+        </ul>
+
+        <h3>📸 Media</h3>
+        <div class="media-grid">
+            <div class="media-item photo-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide(-1, 0)">❮</button>
+                    <div class="carousel-images" data-carousel="0">
+                        <img src="../images/team/2019-team-1.jpg" alt="Team Photo 1" class="carousel-slide active">
+                        <img src="../images/team/2019-team-2.jpg" alt="Team Photo 2" class="carousel-slide">
+                    </div>
+                    <button class="carousel-btn next" onclick="changeSlide(1, 0)">❯</button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1, 0)"></span>
+                        <span class="dot" onclick="currentSlide(2, 0)"></span>
+                    </div>
+                </div>
+                <p>Season Photos (1)</p>
+            </div>
+            <div class="media-item photo-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide(-1, 1)">❮</button>
+                    <div class="carousel-images" data-carousel="1">
+                        <img src="../images/team/2019-team-3.jpg" alt="Team Photo 3" class="carousel-slide active">
+                        <img src="../images/team/2019-team-4.jpg" alt="Team Photo 4" class="carousel-slide">
+                    </div>
+                    <button class="carousel-btn next" onclick="changeSlide(1, 1)">❯</button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1, 1)"></span>
+                        <span class="dot" onclick="currentSlide(2, 1)"></span>
+                    </div>
+                </div>
+                <p>Season Photos (2)</p>
+            </div>
+            <div class="media-item photo-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide(-1, 2)">❮</button>
+                    <div class="carousel-images" data-carousel="2">
+                        <img src="../images/team/2019-team-5.jpg" alt="Team Photo 5" class="carousel-slide active">
+                        <img src="../images/team/2019-team-6.jpg" alt="Team Photo 6" class="carousel-slide">
+                    </div>
+                    <button class="carousel-btn next" onclick="changeSlide(1, 2)">❯</button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1, 2)"></span>
+                        <span class="dot" onclick="currentSlide(2, 2)"></span>
+                    </div>
+                </div>
+                <p>Season Photos (3)</p>
+            </div>
+        </div>
+
+        <style>
+            .photo-carousel { position: relative; }
+            .carousel-container { position: relative; width: 100%; height: 315px; overflow: hidden; border-radius: 10px; }
+            .carousel-images { position: relative; width: 100%; height: 100%; }
+            .carousel-slide { position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s ease-in-out; }
+            .carousel-slide.active { opacity: 1; }
+            .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px 15px; cursor: pointer; font-size: 24px; z-index: 10; transition: background 0.3s; }
+            .carousel-btn:hover { background: rgba(230, 57, 70, 0.8); }
+            .carousel-btn.prev { left: 10px; }
+            .carousel-btn.next { right: 10px; }
+            .carousel-dots { position: absolute; bottom: 15px; left: 0; right: 0; text-align: center; z-index: 10; }
+            .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: rgba(255, 255, 255, 0.5); margin: 0 5px; cursor: pointer; transition: background 0.3s; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+            .dot.active { background: var(--primary); }
+        </style>
+
+        <script>
+            let currentSlideIndexes = [1, 1, 1];
+
+            function changeSlide(n, carouselId) {
+                showSlide(currentSlideIndexes[carouselId] += n, carouselId);
+            }
+
+            function currentSlide(n, carouselId) {
+                showSlide(currentSlideIndexes[carouselId] = n, carouselId);
+            }
+
+            function showSlide(n, carouselId) {
+                const carousel = document.querySelectorAll('[data-carousel]')[carouselId];
+                const slides = carousel.querySelectorAll('.carousel-slide');
+                const dots = carousel.parentElement.querySelectorAll('.dot');
+
+                if (n > slides.length) currentSlideIndexes[carouselId] = 1;
+                if (n < 1) currentSlideIndexes[carouselId] = slides.length;
+
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+
+                slides[currentSlideIndexes[carouselId] - 1].classList.add('active');
+                dots[currentSlideIndexes[carouselId] - 1].classList.add('active');
+            }
+        </script>
+    </section>
+
+    <footer>
+        <p>&copy; 19705 WXYZ. Contact: wxyz19705@gmail.com</p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../particles.js"></script>
+</body>
+</html>

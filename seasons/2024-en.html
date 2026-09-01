@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2022-2023赛季 - 19705 WXYZ</title>
+    <title>2023-2024 Season - 19705 WXYZ</title>
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="stylesheet" href="../style.css">
     <!-- Google Analytics -->
@@ -21,62 +21,74 @@
         <div class="nav-container">
             <h1>19705 WXYZ</h1>
             <ul>
-                <li><a href="../index.html">首页</a></li>
-                <li><a href="../about.html">关于我们</a></li>
-                <li><a href="../seasons.html">赛季档案</a></li>
-                <li><a href="../resources.html">资源分享</a></li>
-                <li><a href="../sponsors.html">支持我们</a></li>
-                <li><a href="2023-en.html" class="lang-switch">🌐 EN</a></li>
+                <li><a href="../index-en.html">Home</a></li>
+                <li><a href="../about-en.html">About</a></li>
+                <li><a href="../seasons-en.html">Seasons</a></li>
+                <li><a href="../resources-en.html">Resources</a></li>
+                <li><a href="../sponsors-en.html">Support</a></li>
+                <li><a href="2024.html" class="lang-switch">🌐 中文</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="content">
-        <!-- 返回按钮 -->
-        <a href="../seasons.html" class="back-btn">← 返回赛季档案</a>
+        <!-- Back Button -->
+        <a href="../seasons-en.html" class="back-btn">← Back to Seasons</a>
 
-        <!-- 机器人照片和概述 -->
-        <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 40px; max-width: 100%;">
-            <div class="robot-hero" style="flex: 1; max-width: 50%; display: flex; flex-direction: column; align-items: center;">
-                <img src="../images/robots/2023-robot-main.png" alt="2023赛季机器人" style="transform: scale(1.2);">
-                <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
-                    <p class="robot-hero-caption" style="font-size: 2.2em; margin: 0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022-2023赛季机器人</p>
-                    <img src="../images/logos/2023-logo.png" alt="2023赛季Logo" style="height: 80px; width: auto;">
-                </div>
-                <p class="robot-hero-name">BENNY</p>
+        <!-- Robot Photos -->
+        <div class="robot-hero-multi">
+            <img src="../images/robots/2024-robot-main.png" alt="2024 Robot Front">
+            <img src="../images/robots/2024-robot-back.png" alt="2024 Robot Back">
+            <img src="../images/robots/2024-robot-up.png" alt="2024 Robot Extended">
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <p class="robot-hero-caption">2023-2024 Season Robot</p>
+            <img src="../images/logos/2024-logo.png" alt="2024 Season Logo" style="height: 50px; width: auto;">
+        </div>
+        <p class="robot-hero-name">BEYOND</p>
+
+        <h3>🤖 Robot Design</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h4>Robot Overview</h4>
+                <ul style="list-style: none; padding-left: 0; margin: 0;">
+                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>Articulated arm with slide rail structure using potentiometer for precise position control</li>
+                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>Gripper for precise pixel grabbing and placement</li>
+                    <li style="margin-bottom: 4px;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>Paper airplane launching mechanism</li>
+                    <li style="margin-bottom: 0;"><span style="color: var(--primary); font-size: 0.6em; margin-right: 6px;">●</span>High hanging mechanism</li>
+                </ul>
             </div>
-            <div style="flex: 1; max-width: 50%; padding-top: 20px; display: flex; justify-content: center;">
-                <div>
-                    <h4 style="margin-bottom: 15px; font-size: 1.5em;">机器人概述</h4>
-                    <ul style="list-style: none; padding-left: 0; margin: 0; font-size: 1.2em; line-height: 1.8;">
-                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>高度稳定的多级垂直升降机构</li>
-                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>高效容错的Cone抓取执行器</li>
-                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>配合里程计的高精度路径规划</li>
-                        <li style="margin-bottom: 0;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>专为锥体几何特性设计的对齐与防卡挂机构</li>
-                    </ul>
-                </div>
+            <div class="card">
+                <h4>Technical Specifications</h4>
+                <p><strong>Weight:</strong> 11.4 kg<br>
+                <strong>Motors:</strong> 7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Servos:</strong> 7<br>
+                <strong>Sensors:</strong> Magnetic sensor, color sensor, distance sensor, potentiometer, camera, external encoder</p>
+            </div>
+            <div class="card">
+                <h4>CAD Files</h4>
+                <p>We've open-sourced this season's design files. Welcome to exchange.</p>
+                <a href="../downloads/2024-cad.zip" class="download-btn">📐 Download CAD Files</a>
             </div>
         </div>
 
-        <h3>🏅 赛季成就</h3>
+        <h3>🏅 Season Achievements</h3>
         <ul class="achievement-list">
-            <li>🥇 线上资格赛1 - 排名第一 - 2023年2月</li>
-            <li>🔧 线上资格赛1 - 设计奖 - 2023年2月</li>
-            <li>🐿️ 中国区总决赛 -  Dean's List Finalists 迪恩名单奖提名 - 2023年2月</li>
-            <li>🥈 中国区总决赛 - 排名第二 - 2023年2月</li>
-            <li>💡 中国区总决赛 - 启发奖第三名 - 2023年2月</li>
-            <li>💪 中国区总决赛 - 激励奖第二名 - 2023年2月</li>
-            <li>🎓 垫江季后赛 - 评审奖 - 2023年4月</li>
+            <li>💻 Chongqing Qualifier - Think Award - December 2023</li>
+            <li>🏆 Shanghai Qualifier - Inspire Award 3rd Place - January 2024</li>
+            <li>🏆 China Championship - Inspire Award 3rd Place - March 2024</li>
+            <li>🥇 Guangzhou Playoff - Winning Alliance - July 2024</li>
+            <li>🤝 Guangzhou Playoff - Promote Award - July 2024</li>
+            <li>⭐️ Beijing Playoff - Compass Award - August 2024</li>
         </ul>
 
-        <h3>📸 媒体资料</h3>
+        <h3>📸 Media</h3>
         <div class="media-grid">
             <div class="media-item photo-carousel">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="changeSlide(-1, 0)">❮</button>
                     <div class="carousel-images" data-carousel="0">
-                        <img src="../images/team/2023-team-1.jpg" alt="团队照片1" class="carousel-slide active">
-                        <img src="../images/team/2023-team-2.jpg" alt="团队照片2" class="carousel-slide">
+                        <img src="../images/team/2024-team-1.jpg" alt="Team Photo 1" class="carousel-slide active">
+                        <img src="../images/team/2024-team-2.jpg" alt="Team Photo 2" class="carousel-slide">
                     </div>
                     <button class="carousel-btn next" onclick="changeSlide(1, 0)">❯</button>
                     <div class="carousel-dots">
@@ -84,14 +96,14 @@
                         <span class="dot" onclick="currentSlide(2, 0)"></span>
                     </div>
                 </div>
-                <p>赛季照片 (1)</p>
+                <p>Season Photos (1)</p>
             </div>
             <div class="media-item photo-carousel">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="changeSlide(-1, 1)">❮</button>
                     <div class="carousel-images" data-carousel="1">
-                        <img src="../images/team/2023-team-3.jpg" alt="团队照片3" class="carousel-slide active">
-                        <img src="../images/team/2023-team-4.jpg" alt="团队照片4" class="carousel-slide">
+                        <img src="../images/team/2024-team-3.jpg" alt="Team Photo 3" class="carousel-slide active">
+                        <img src="../images/team/2024-team-4.jpg" alt="Team Photo 4" class="carousel-slide">
                     </div>
                     <button class="carousel-btn next" onclick="changeSlide(1, 1)">❯</button>
                     <div class="carousel-dots">
@@ -99,14 +111,14 @@
                         <span class="dot" onclick="currentSlide(2, 1)"></span>
                     </div>
                 </div>
-                <p>赛季照片 (2)</p>
+                <p>Season Photos (2)</p>
             </div>
             <div class="media-item photo-carousel">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="changeSlide(-1, 2)">❮</button>
                     <div class="carousel-images" data-carousel="2">
-                        <img src="../images/team/2023-team-5.jpg" alt="团队照片5" class="carousel-slide active">
-                        <img src="../images/team/2023-team-6.jpg" alt="团队照片6" class="carousel-slide">
+                        <img src="../images/team/2024-team-5.jpg" alt="Team Photo 5" class="carousel-slide active">
+                        <img src="../images/team/2024-team-6.jpg" alt="Team Photo 6" class="carousel-slide">
                     </div>
                     <button class="carousel-btn next" onclick="changeSlide(1, 2)">❯</button>
                     <div class="carousel-dots">
@@ -114,7 +126,7 @@
                         <span class="dot" onclick="currentSlide(2, 2)"></span>
                     </div>
                 </div>
-                <p>赛季照片 (3)</p>
+                <p>Season Photos (3)</p>
             </div>
         </div>
 
@@ -189,10 +201,14 @@
             .dot.active {
                 background: var(--primary);
             }
+
+            .robot-hero-multi img[src*="2024-robot-back.png"] {
+                transform: scale(1.08);
+            }
         </style>
 
         <script>
-            let currentSlideIndexes = [1, 1, 1];
+            let currentSlideIndexes = [1, 1, 1]; // Three carousel current indexes
 
             function changeSlide(n, carouselId) {
                 showSlide(currentSlideIndexes[carouselId] += n, carouselId);
@@ -219,8 +235,31 @@
         </script>
     </section>
 
+    <style>
+        /* Robot name and title centered */
+        .robot-hero-caption,
+        .robot-hero-name {
+            text-align: center;
+        }
+
+        /* Enlarge title font size */
+        .robot-hero-caption {
+            font-size: 2em;
+        }
+
+        /* Shrink back image 6% */
+        .robot-hero-multi img[src*="2024-robot-back.png"] {
+            transform: scale(0.88) translateY(-10px);
+        }
+
+        /* Shrink up image 6% */
+        .robot-hero-multi img[src*="2024-robot-up.png"] {
+            transform: scale(1.10) translateY(-40px);
+        }
+    </style>
+
     <footer>
-        <p>&copy; 2023 FTC队伍. 联系方式: wxyz19705@gmail.com</p>
+        <p>&copy; 19705 WXYZ. Contact: wxyz19705@gmail.com</p>
     </footer>
 
     <script src="../script.js"></script>
