@@ -613,6 +613,23 @@ body:has([src*="2026-robot-main.png"]) .robot-hero-multi img:nth-child(3):hover 
     transform: scale(1.1) translateY(-10px);
 }
 
+/* 2024赛季特殊调整 */
+body:has([src*="2024-robot-main.png"]) .robot-hero-multi img:nth-child(2) {
+    transform: scale(0.8);
+}
+
+body:has([src*="2024-robot-main.png"]) .robot-hero-multi img:nth-child(2):hover {
+    transform: scale(0.85) translateY(-10px);
+}
+
+body:has([src*="2024-robot-main.png"]) .robot-hero-multi img:nth-child(3) {
+    transform: scale(1.0);
+}
+
+body:has([src*="2024-robot-main.png"]) .robot-hero-multi img:nth-child(3):hover {
+    transform: scale(1.1) translateY(-10px);
+}
+
 .robot-hero-caption {
     margin-top: 20px;
     font-size: 1.3rem;
@@ -801,6 +818,11 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .season-overview {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .season-selector {
         flex-direction: column;
     }
@@ -808,4 +830,15 @@ footer {
     .season-btn {
         width: 100%;
     }
+}
+/* Language Switch Button */
+.lang-switch {
+    background: rgba(230, 57, 70, 0.15) !important;
+    border: 1px solid var(--primary) !important;
+    font-weight: 600 !important;
+}
+
+.lang-switch:hover {
+    background: var(--primary) !important;
+    color: var(--dark) !important;
 }

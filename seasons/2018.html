@@ -25,7 +25,8 @@
                 <li><a href="../about.html">关于我们</a></li>
                 <li><a href="../seasons.html">赛季档案</a></li>
                 <li><a href="../resources.html">资源分享</a></li>
-                <li><a href="../sponsors.html">赞助商</a></li>
+                <li><a href="../sponsors.html">支持我们</a></li>
+                <li><a href="2018-en.html" class="lang-switch">🌐 EN</a></li>
             </ul>
         </div>
     </nav>
@@ -38,59 +39,181 @@
         <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 40px; max-width: 100%;">
             <div class="robot-hero" style="flex: 1; max-width: 50%; display: flex; flex-direction: column; align-items: center;">
                 <img src="../images/robots/2018-robot-main.png" alt="2018赛季机器人" style="transform: scale(1.2);">
-                <p class="robot-hero-caption" style="font-size: 2.2em;">2017-2018赛季机器人</p>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+                    <p class="robot-hero-caption" style="font-size: 2.2em; margin: 0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017-2018赛季机器人</p>
+                    <img src="../images/logos/2018-logo.png" alt="2018赛季Logo" style="height: 100px; width: auto;">
+                </div>
                 <p class="robot-hero-name">RAMP</p>
             </div>
             <div style="flex: 1; max-width: 50%; padding-top: 20px; display: flex; justify-content: center;">
                 <div>
                     <h4 style="margin-bottom: 15px; font-size: 1.5em;">机器人概述</h4>
                     <ul style="list-style: none; padding-left: 0; margin: 0; font-size: 1.2em; line-height: 1.8;">
-                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>采用四轮麦克纳姆轮设计</li>
-                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>实现全向移动能力</li>
-                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>配备先进视觉识别系统</li>
-                        <li style="margin-bottom: 0;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>精确的机械臂控制</li>
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>容错性极强的软质毛刷轮主动采集机构</li>
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>具有高刚性的多级垂直升降系统</li>
+                        <li style="margin-bottom: 12px;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>专为识别并分类宝石设计的副机械臂</li>
+                        <li style="margin-bottom: 0;"><span style="color: var(--primary); font-size: 0.8em; margin-right: 8px;">●</span>提供极致移动自由度的麦克纳姆轮底盘</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <h3>🤖 机器人设计</h3>
-        <div class="card-grid" style="grid-template-columns: 1fr;">
-            <div class="card">
-                <h4>技术规格</h4>
-                <p><strong>驱动系统：</strong> 四轮麦克纳姆轮<br>
-                <strong>控制器：</strong> REV Control Hub<br>
-                <strong>编程语言：</strong> Java<br>
-                <strong>传感器：</strong> 颜色传感器、距离传感器、IMU</p>
-            </div>
-        </div>
-
         <h3>🏅 赛季成就</h3>
         <ul class="achievement-list">
-            <li>🥇 区域赛冠军 - 2018年3月</li>
-            <li>🏆 最佳设计奖 - 2018年3月</li>
-            <li>⭐ 创新奖 - 2018年2月</li>
+            <li>🐣 西安站选拔赛 - 二等奖 - 2018年4月</li>
+            <li>🥈 上海站选拔赛 - 亚军联盟队长 - 2018年5月</li>
+            <li>📝 北京站选拔赛 - 二等奖 - 2018年5月</li>
+            <li>😄 全国总决赛 - 三等奖 - 2018年6月</li>
         </ul>
 
         <h3>📸 媒体资料</h3>
         <div class="media-grid">
-            <div class="media-item">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2018_1" frameborder="0" allowfullscreen></iframe>
-                <p>机器人演示视频</p>
+            <div class="media-item photo-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide(-1, 0)">❮</button>
+                    <div class="carousel-images" data-carousel="0">
+                        <img src="../images/team/2018-team-1.jpg" alt="团队照片1" class="carousel-slide active">
+                        <img src="../images/team/2018-team-2.jpg" alt="团队照片2" class="carousel-slide">
+                    </div>
+                    <button class="carousel-btn next" onclick="changeSlide(1, 0)">❯</button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1, 0)"></span>
+                        <span class="dot" onclick="currentSlide(2, 0)"></span>
+                    </div>
+                </div>
+                <p>赛季照片 (1)</p>
             </div>
-            <div class="media-item">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2018_2" frameborder="0" allowfullscreen></iframe>
-                <p>区域赛决赛</p>
+            <div class="media-item photo-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide(-1, 1)">❮</button>
+                    <div class="carousel-images" data-carousel="1">
+                        <img src="../images/team/2018-team-3.jpg" alt="团队照片3" class="carousel-slide active">
+                        <img src="../images/team/2018-team-4.jpg" alt="团队照片4" class="carousel-slide">
+                    </div>
+                    <button class="carousel-btn next" onclick="changeSlide(1, 1)">❯</button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1, 1)"></span>
+                        <span class="dot" onclick="currentSlide(2, 1)"></span>
+                    </div>
+                </div>
+                <p>赛季照片 (2)</p>
             </div>
-            <div class="media-item">
-                <img src="../images/2018-robot.jpg" alt="2018机器人">
-                <p>机器人全貌</p>
-            </div>
-            <div class="media-item">
-                <img src="../images/2018-team.jpg" alt="2018团队">
-                <p>团队合影</p>
+            <div class="media-item photo-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide(-1, 2)">❮</button>
+                    <div class="carousel-images" data-carousel="2">
+                        <img src="../images/team/2018-team-5.jpg" alt="团队照片5" class="carousel-slide active">
+                        <img src="../images/team/2018-team-6.jpg" alt="团队照片6" class="carousel-slide">
+                    </div>
+                    <button class="carousel-btn next" onclick="changeSlide(1, 2)">❯</button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1, 2)"></span>
+                        <span class="dot" onclick="currentSlide(2, 2)"></span>
+                    </div>
+                </div>
+                <p>赛季照片 (3)</p>
             </div>
         </div>
+
+        <style>
+            .photo-carousel {
+                position: relative;
+            }
+            .carousel-container {
+                position: relative;
+                width: 100%;
+                height: 315px;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            .carousel-images {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            .carousel-slide {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .carousel-slide.active {
+                opacity: 1;
+            }
+            .carousel-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-size: 24px;
+                z-index: 10;
+                transition: background 0.3s;
+            }
+            .carousel-btn:hover {
+                background: rgba(230, 57, 70, 0.8);
+            }
+            .carousel-btn.prev {
+                left: 10px;
+            }
+            .carousel-btn.next {
+                right: 10px;
+            }
+            .carousel-dots {
+                position: absolute;
+                bottom: 15px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+            }
+            .dot {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.5);
+                margin: 0 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            }
+            .dot.active {
+                background: var(--primary);
+            }
+        </style>
+
+        <script>
+            let currentSlideIndexes = [1, 1, 1];
+
+            function changeSlide(n, carouselId) {
+                showSlide(currentSlideIndexes[carouselId] += n, carouselId);
+            }
+
+            function currentSlide(n, carouselId) {
+                showSlide(currentSlideIndexes[carouselId] = n, carouselId);
+            }
+
+            function showSlide(n, carouselId) {
+                const carousel = document.querySelectorAll('[data-carousel]')[carouselId];
+                const slides = carousel.querySelectorAll('.carousel-slide');
+                const dots = carousel.parentElement.querySelectorAll('.dot');
+
+                if (n > slides.length) currentSlideIndexes[carouselId] = 1;
+                if (n < 1) currentSlideIndexes[carouselId] = slides.length;
+
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+
+                slides[currentSlideIndexes[carouselId] - 1].classList.add('active');
+                dots[currentSlideIndexes[carouselId] - 1].classList.add('active');
+            }
+        </script>
     </section>
 
     <footer>

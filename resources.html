@@ -2,7 +2,6 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>资源分享 - 19705 WXYZ</title>
     <link rel="icon" type="image/png" href="favicon.png">
@@ -16,137 +15,265 @@
       gtag('config', 'G-HMJB08YKV4');
     </script>
 
+    <style>
+        .card a {
+            color: white;
+            text-decoration: none;
+        }
+        .card a:visited {
+            color: white;
+        }
+        .card a:hover {
+            color: var(--primary);
+        }
+    </style>
+
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <h1>FTC 19705 WXYZ</h1>
+            <h1>19705 WXYZ</h1>
             <ul>
                 <li><a href="index.html">首页</a></li>
                 <li><a href="about.html">关于我们</a></li>
                 <li><a href="seasons.html">赛季档案</a></li>
-                <li><a href="resources.html">资源分享</a></li>
-                <li><a href="sponsors.html">赞助商</a></li>
+                <li><a href="resources.html" class="active">资源分享</a></li>
+                <li><a href="sponsors.html">支持我们</a></li>
+                <li><a href="resources-en.html" class="lang-switch">🌐 EN</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="content">
         <h2>📚 资源分享</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px; font-size: 1.4em;">
+            我们整理了这些对 FTC 队伍有帮助的资源，希望能帮助更多团队成长
+        </p>
 
-        <div class="card">
-            <h4>开源精神</h4>
-            <p>我们相信知识共享能让整个FTC社区变得更强大。在这里，我们分享我们的代码、设计文件、教程和经验，希望能帮助其他队伍成长。</p>
-        </div>
-
-        <h3>💻 代码资源</h3>
+        <!-- 官方资源 -->
+        <h3>🏛️ 官方资源</h3>
         <div class="card-grid">
             <div class="card">
-                <h4>机器人控制代码</h4>
-                <p>完整的机器人控制代码，包括自动阶段和手动阶段的实现。使用Java编写，基于FTC SDK。</p>
-                <a href="https://github.com/your-team/robot-code" class="download-btn" target="_blank">GitHub仓库</a>
+                <h4>FIRST 官方网站</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.firstinspires.org/robotics/ftc" target="_blank">FIRST Tech Challenge</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 官方主页，包含赛季信息、规则更新和官方公告</p>
             </div>
 
             <div class="card">
-                <h4>视觉识别代码</h4>
-                <p>使用OpenCV和TensorFlow实现的物体识别代码，可以识别游戏元素并进行自动对准。</p>
-                <a href="downloads/vision-code.zip" class="download-btn">下载代码</a>
+                <h4>规则手册</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.firstinspires.org/resource-library/ftc/game-and-season-info" target="_blank">Game Manual</a></p>
+                <p style="font-size: 0.9em; color: #666;">每个赛季的官方规则手册，必读文档</p>
             </div>
 
             <div class="card">
-                <h4>路径规划算法</h4>
-                <p>自动阶段的路径规划实现，包括纯追踪算法和PID控制器。</p>
-                <a href="downloads/path-planning.zip" class="download-btn">下载代码</a>
-            </div>
-        </div>
-
-        <h3>🔧 机械设计</h3>
-        <div class="card-grid">
-            <div class="card">
-                <h4>底盘设计</h4>
-                <p>麦克纳姆轮底盘的完整CAD文件，包括装配图和零件图。</p>
-                <a href="downloads/chassis-cad.zip" class="download-btn">下载CAD</a>
+                <h4>FTC 官方论坛</h4>
+                <p style="font-size: 1.2em;"><a href="https://ftc-community.firstinspires.org//" target="_blank">FTC Forum</a></p>
+                <p style="font-size: 0.9em; color: #666;">官方技术支持论坛，可以提问规则和技术问题</p>
             </div>
 
             <div class="card">
-                <h4>机械臂设计</h4>
-                <p>多自由度机械臂的设计文件，适用于抓取和放置任务。</p>
-                <a href="downloads/arm-cad.zip" class="download-btn">下载CAD</a>
+                <h4>中国区官网</h4>
+                <p style="font-size: 1.2em;"><a href="https://ftc.firstinspires-china.org/" target="_blank">FIRST 中国</a></p>
+                <p style="font-size: 0.9em; color: #666;">中国区赛事信息、报名和新闻发布</p>
             </div>
 
             <div class="card">
-                <h4>3D打印件</h4>
-                <p>常用的3D打印零件STL文件，包括支架、连接件等。</p>
-                <a href="downloads/3d-parts.zip" class="download-btn">下载STL</a>
+                <h4>FTC 赛事日历</h4>
+                <p style="font-size: 1.2em;"><a href="https://ftc-events.firstinspires.org/" target="_blank">Event Listing</a></p>
+                <p style="font-size: 0.9em; color: #666;">全球 FTC 赛事日程和比赛信息</p>
+            </div>
+
+            <div class="card">
+                <h4>官方 GitHub</h4>
+                <p style="font-size: 1.2em;"><a href="https://github.com/FIRST-Tech-Challenge" target="_blank">FTC GitHub</a></p>
+                <p style="font-size: 0.9em; color: #666;">官方代码库，包含 SDK、示例代码和工具</p>
             </div>
         </div>
 
-        <h3>📖 教程文档</h3>
+        <!-- 学习资源 -->
+        <h3>📖 学习资源</h3>
         <div class="card-grid">
             <div class="card">
-                <h4>新手入门指南</h4>
-                <p>从零开始的FTC入门教程，包括编程、机械、电子等各方面基础知识。</p>
-                <a href="downloads/beginner-guide.pdf" class="download-btn">下载PDF</a>
+                <h4>Game Manual 0</h4>
+                <p style="font-size: 1.2em;"><a href="https://gm0.org/" target="_blank">gm0.org</a></p>
+                <p style="font-size: 0.9em; color: #666;">最权威的 FTC 百科全书，涵盖机械、编程、策略等所有方面。新手必看！</p>
             </div>
 
             <div class="card">
-                <h4>Java编程教程</h4>
-                <p>针对FTC机器人编程的Java教程，从基础语法到高级应用。</p>
-                <a href="downloads/java-tutorial.pdf" class="download-btn">下载PDF</a>
+                <h4>FTC SDK 文档</h4>
+                <p style="font-size: 1.2em;"><a href="https://javadoc.io/doc/org.firstinspires.ftc" target="_blank">FTC SDK Javadoc</a></p>
+                <p style="font-size: 0.9em; color: #666;">官方编程接口文档，了解所有可用的类和方法</p>
             </div>
 
             <div class="card">
-                <h4>CAD设计教程</h4>
-                <p>使用SolidWorks/Fusion 360进行机器人设计的教程。</p>
-                <a href="downloads/cad-tutorial.pdf" class="download-btn">下载PDF</a>
+                <h4>PedroPathing 导航库</h4>
+                <p style="font-size: 1.2em;"><a href="https://pedropathing.com/" target="_blank">Learn PedroPathing</a></p>
+                <p style="font-size: 0.9em; color: #666;">先进的自动导航库，帮助机器人精确移动和路径规划</p>
             </div>
 
             <div class="card">
-                <h4>比赛策略分析</h4>
-                <p>历年赛季的比赛策略分析和得分优化建议。</p>
-                <a href="downloads/strategy-guide.pdf" class="download-btn">下载PDF</a>
+                <h4>FTC YouTube 频道</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.youtube.com/@FIRSTTechChallenge" target="_blank">FTC 官方频道</a></p>
+                <p style="font-size: 0.9em; color: #666;">官方教学视频、比赛录像和技术讲座</p>
             </div>
 
             <div class="card">
-                <h4>工程笔记本模板</h4>
-                <p>符合FTC要求的工程笔记本模板和填写指南。</p>
-                <a href="downloads/notebook-template.pdf" class="download-btn">下载PDF</a>
+                <h4>FTC Docs</h4>
+                <p style="font-size: 1.2em;"><a href="https://ftc-docs.firstinspires.org/" target="_blank">FTC 官方文档</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 官方文档网站，包含编程指南、硬件说明和最新教程</p>
             </div>
 
             <div class="card">
-                <h4>队伍管理经验</h4>
-                <p>队伍组织、时间管理、资金筹集等方面的经验分享。</p>
-                <a href="downloads/team-management.pdf" class="download-btn">下载PDF</a>
+                <h4>LearnJavaForFTC</h4>
+                <p style="font-size: 1.2em;"><a href="https://github.com/alan412/LearnJavaForFTC" target="_blank">Java 编程教程</a></p>
+                <p style="font-size: 0.9em; color: #666;">Java 编程教程专门为 FTC 设计，适合初学者系统学习</p>
             </div>
         </div>
 
-        <h3>🔗 有用的链接</h3>
+        <!-- 技术工具 -->
+        <h3>🛠️ 技术工具</h3>
         <div class="card-grid">
             <div class="card">
-                <h4>官方资源</h4>
-                <p><a href="https://www.firstinspires.org/robotics/ftc" target="_blank">FIRST官网</a></p>
-                <p><a href="https://ftc-docs.firstinspires.org/" target="_blank">FTC文档</a></p>
-                <p><a href="https://github.com/FIRST-Tech-Challenge/FtcRobotController" target="_blank">FTC SDK</a></p>
+                <h4>Onshape (CAD)</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.onshape.com/en/education/" target="_blank">Onshape 教育版</a></p>
+                <p style="font-size: 0.9em; color: #666;">免费的云端 CAD 软件，支持团队协作设计</p>
             </div>
 
             <div class="card">
-                <h4>社区资源</h4>
-                <p><a href="https://ftcforum.firstinspires.org/" target="_blank">FTC论坛</a></p>
-                <p><a href="https://gm0.org/" target="_blank">Game Manual 0</a></p>
-                <p><a href="https://www.youtube.com/c/FIRSTTechChallenge" target="_blank">FTC YouTube</a></p>
+                <h4>Fusion 360</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators" target="_blank">Fusion 360 学生版</a></p>
+                <p style="font-size: 0.9em; color: #666;">Autodesk 的专业 CAD 软件，学生免费使用</p>
             </div>
 
             <div class="card">
-                <h4>工具推荐</h4>
-                <p><a href="https://www.onshape.com/" target="_blank">Onshape (CAD)</a></p>
-                <p><a href="https://www.revrobotics.com/" target="_blank">REV Robotics</a></p>
-                <p><a href="https://www.gobilda.com/" target="_blank">goBILDA</a></p>
+                <h4>Android Studio</h4>
+                <p style="font-size: 1.2em;"><a href="https://developer.android.com/" target="_blank">下载 Android Studio</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 编程的官方开发环境</p>
+            </div>
+
+            <div class="card">
+                <h4>REV Hardware Client</h4>
+                <p style="font-size: 1.2em;"><a href="https://docs.revrobotics.com/rev-hardware-client/" target="_blank">REV 硬件客户端</a></p>
+                <p style="font-size: 0.9em; color: #666;">管理和更新 REV Control Hub 的必备工具</p>
+            </div>
+
+            <div class="card">
+                <h4>FTC Vision Portal</h4>
+                <p style="font-size: 1.2em;"><a href="https://ftc-docs.firstinspires.org/en/latest/apriltag/vision_portal/visionportal_overview/visionportal-overview.html" target="_blank">Vision Portal</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 官方视觉处理框架，支持 AprilTag 识别和物体检测</p>
+            </div>
+
+            <div class="card">
+                <h4>EasyOpenCV</h4>
+                <p style="font-size: 1.2em;"><a href="https://github.com/OpenFTC/EasyOpenCV" target="_blank">EasyOpenCV</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 视觉识别库，简化 OpenCV 的使用</p>
+            </div>
+        </div>
+
+        <!-- 硬件供应商 -->
+        <h3>🔩 硬件供应商</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h4>REV Robotics</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.revrobotics.com/" target="_blank">revrobotics.com</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 官方套件供应商，Control Hub、电机、传感器等</p>
+            </div>
+
+            <div class="card">
+                <h4>goBILDA</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.gobilda.com/" target="_blank">gobilda.com</a></p>
+                <p style="font-size: 0.9em; color: #666;">高质量结构件系统，兼容性好，设计灵活</p>
+            </div>
+
+            <div class="card">
+                <h4>AndyMark</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.andymark.com/" target="_blank">andymark.com</a></p>
+                <p style="font-size: 0.9em; color: #666;">机器人零部件供应商，提供多种机械组件</p>
+            </div>
+        </div>
+
+        <!-- 19705 开源资源 -->
+        <h3>💡 19705 团队资源</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h4>CAD 设计文件</h4>
+                <p style="font-size: 1.2em;"><a href="seasons.html">查看赛季页面</a></p>
+                <p style="font-size: 0.9em; color: #666;">部分赛季的机器人 CAD 文件可供下载学习</p>
+            </div>
+
+            <div class="card">
+                <h4>团队 Bilibili</h4>
+                <p style="font-size: 1.2em;"><a href="https://space.bilibili.com/399833418?spm_id_from=333.937.0.0" target="_blank">关注我们</a></p>
+                <p style="font-size: 0.9em; color: #666;">机器人演示视频和技术分享</p>
+            </div>
+
+            <div class="card">
+                <h4>联系我们</h4>
+                <p style="font-size: 1.2em;"><a href="mailto:wxyz19705@gmail.com">wxyz19705@gmail.com</a></p>
+                <p style="font-size: 0.9em; color: #666;">欢迎交流技术问题，我们乐于分享经验</p>
+            </div>
+
+            <div class="card" style="opacity: 0.5;">
+                <h4>更多资源</h4>
+                <p style="font-size: 1.2em; color: #999;">敬请期待</p>
+                <p style="font-size: 0.9em; color: #666;">我们将持续更新团队资源</p>
+            </div>
+
+            <div class="card" style="opacity: 0.5;">
+                <h4>更多资源</h4>
+                <p style="font-size: 1.2em; color: #999;">敬请期待</p>
+                <p style="font-size: 0.9em; color: #666;">我们将持续更新团队资源</p>
+            </div>
+
+            <div class="card" style="opacity: 0.5;">
+                <h4>更多资源</h4>
+                <p style="font-size: 1.2em; color: #999;">敬请期待</p>
+                <p style="font-size: 0.9em; color: #666;">我们将持续更新团队资源</p>
+            </div>
+        </div>
+
+        <!-- 社区与交流 -->
+        <h3>💬 社区与交流</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h4>FTC Discord</h4>
+                <p style="font-size: 1.2em;"><a href="https://discord.com/invite/ftc" target="_blank">加入 Discord 服务器</a></p>
+                <p style="font-size: 0.9em; color: #666;">全球 FTC 队伍交流社区，可以实时讨论技术问题</p>
+            </div>
+
+            <div class="card">
+                <h4>Reddit r/FTC</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.reddit.com/r/FTC/" target="_blank">访问 r/FTC</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 社区论坛，分享设计、提问和讨论</p>
+            </div>
+
+            <div class="card">
+                <h4>Chief Delphi</h4>
+                <p style="font-size: 1.2em;"><a href="https://www.chiefdelphi.com/c/other/first-tech-challenge/60" target="_blank">Chief Delphi FTC</a></p>
+                <p style="font-size: 0.9em; color: #666;">FIRST 机器人社区，包含 FTC 技术讨论区</p>
+            </div>
+
+            <div class="card">
+                <h4>FTC 中国社区</h4>
+                <p style="font-size: 0.9em; color: #666;">如有微信群或 QQ 群，欢迎联系我们获取入群方式</p>
+            </div>
+
+            <div class="card">
+                <h4>FTCScout</h4>
+                <p style="font-size: 1.2em;"><a href="https://ftcscout.org/" target="_blank">ftcscout.org</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 比赛数据分析平台，查看队伍排名和赛事统计</p>
+            </div>
+
+            <div class="card">
+                <h4>FTC Teams</h4>
+                <p style="font-size: 1.2em;"><a href="https://theorangealliance.org/" target="_blank">The Orange Alliance</a></p>
+                <p style="font-size: 0.9em; color: #666;">FTC 队伍数据库和赛事统计平台</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 19705 WXYZ. 联系方式: team@19705wxyz.com</p>
+        <p>&copy;  19705 WXYZ. 联系方式: wxyz19705@gmail.com</p>
     </footer>
 
     <script src="script.js"></script>

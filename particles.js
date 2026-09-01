@@ -38,7 +38,7 @@
             this.size = Math.random() * 3 + 1.5; // 增加粒子大小
             this.speedX = Math.random() * 1 - 0.5;
             this.speedY = Math.random() * 1 - 0.5;
-            this.color = `rgba(230, 57, 70, ${Math.random() * 0.6 + 0.5})`; // 增加不透明度
+            this.color = `rgba(230, 57, 70, ${Math.random() * 0.3 + 0.2})`; // 调暗粒子 // 增加不透明度
         }
 
         update() {
@@ -70,9 +70,9 @@
         }
 
         draw() {
-            // 添加发光效果
-            ctx.shadowBlur = 10;
-            ctx.shadowColor = 'rgba(230, 57, 70, 0.8)';
+            // 添加发光效果（调暗）
+            ctx.shadowBlur = 6;
+            ctx.shadowColor = 'rgba(230, 57, 70, 0.3)';
 
             ctx.fillStyle = this.color;
             ctx.beginPath();
@@ -101,7 +101,7 @@
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (distance < 120) {
-                    const opacity = (1 - distance / 120) * 0.5; // 增加连线不透明度
+                    const opacity = (1 - distance / 120) * 0.3; // 调暗连线
                     ctx.strokeStyle = `rgba(230, 57, 70, ${opacity})`;
                     ctx.lineWidth = 1.5; // 增加线宽
                     ctx.beginPath();
