@@ -842,3 +842,28 @@ footer {
     background: var(--primary) !important;
     color: var(--dark) !important;
 }
+
+/* 🐝 Cursor Bee Follower */
+.cursor-bee {
+    position: fixed;
+    pointer-events: none;
+    font-size: 24px;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+    user-select: none;
+    will-change: transform;
+}
+
+/* 添加飞行动画 */
+@keyframes beeWing {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.cursor-bee {
+    animation: beeWing 0.2s ease-in-out infinite;
+}
